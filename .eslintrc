@@ -1,0 +1,41 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:import/typescript",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended",
+      "some-other-config-you-use",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "ignorePatterns": [
+      "/node_modules/"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "react/prop-types": "off",
+      "react/react-in-jsx-scope": "off", //import react from react
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "import/no-anonymous-default-export": "off",
+      "import/no-unresolved": "off",
+      "@typescript-eslint/no-non-null-assertion": "off"
+    }
+  }
+
+  
